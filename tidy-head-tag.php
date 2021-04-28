@@ -51,14 +51,3 @@ function run_tidy_head_tag() {
 	new Tidy_Head_Tag();
 }
 run_tidy_head_tag();
-
-/**
- * The code that runs during plugin deactivation.
- * This action is documented in includes/class-tidy-head-tag-deactivator.php
- */
-function deactivate_tidy_head_tag() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-tidy-head-tag-deactivater.php';
-	Tidy_Head_Tag_Deactivater::deactivate();
-}
-
-// register_deactivation_hook( __FILE__, 'deactivate_tidy_head_tag' );
