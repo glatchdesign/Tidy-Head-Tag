@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/glatchdesign/Tidy-Head-Tag
  * Description: Organize the head tags that WordPress automatically outputs.
  * Author: Glatch
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author URI: https://glatchdesign.com
  * License: GPL2 or later
  * Text Dmain: tidy-head-tag
