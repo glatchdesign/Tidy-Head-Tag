@@ -24,5 +24,8 @@ Of course, if you need it, follow the same procedure.
 5. Visit the "settings" -> "Tidy Head Tag" to configure your options
 
 == Changelog ==
+= 1.1.0 =
+Updated interface of option settings page.
+
 = 1.0.0 =
 Released.
