@@ -27,6 +27,7 @@ class Tidy_Head_Tag {
 	 */
 	public function __construct() {
 		$this->load_dependencies();
+		$this->set_locale();
 	}
 
 	/**
@@ -44,5 +45,22 @@ class Tidy_Head_Tag {
 
 		new Tidy_Head_Tag_Admin();
 		new Tidy_Head_Tag_Front();
+	}
+
+	/**
+	 * Define the locale for this plugin for internationalization.
+	 *
+	 * @since 1.2.0
+	 */
+	private function set_locale() {
+		/**
+		 * Include files.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-tidy-head-tag-i18n.php';
+
+		$plugin_i18n = new Tidy_Head_Tag_i18n();
+
+		add_action( 'plugins_loaded', array( $plugin_i18n, 'load_plugin_textdomain' ) );
+
 	}
 }
