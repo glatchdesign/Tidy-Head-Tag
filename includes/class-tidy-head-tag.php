@@ -5,8 +5,8 @@
  * A class definition that includes attributes and functions used across both the
  * public-facing side of the site and the admin area.
  *
- * @package    Tidy_Head_Tag
- * @subpackage Tidy_Head_Tag/includes
+ * @since   1.0.0
+ * @package Tidy_Head_Tag
  */
 
 // Exit if accessed directly.
