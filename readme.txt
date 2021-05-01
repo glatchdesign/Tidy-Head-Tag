@@ -5,7 +5,7 @@ Tags: head, wp_head, header, meta
 Requires at least: 5.7.1
 Tested up to: 5.7.1
 Requires PHP: 7.3.5
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,8 +24,12 @@ Of course, if you need it, follow the same procedure.
 5. Visit the "settings" -> "Tidy Head Tag" to configure your options
 
 == Changelog ==
+= 1.2.0 =
+* Defined the internationalization functionality.
+* Translated into Japanese.
+
 = 1.1.0 =
-Updated interface of option settings page.
+* Updated interface of option settings page.
 
 = 1.0.0 =
-Released.
+* Released.
