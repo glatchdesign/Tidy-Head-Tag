@@ -8,6 +8,7 @@
  * Author URI: https://glatchdesign.com
  * License: GPL2 or later
  * Text Dmain: tidy-head-tag
+ * Domain Path: /languages
  *
  * @package Tidy_Head_Tag
  */
