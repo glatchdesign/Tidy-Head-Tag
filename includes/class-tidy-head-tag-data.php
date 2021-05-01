@@ -12,6 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * Data class.
+ *
+ * @since 1.0.0
  */
 class Tidy_Head_Tag_Data {
 	/**
@@ -38,6 +40,8 @@ class Tidy_Head_Tag_Data {
 
 	/**
 	 * Constructor.
+	 *
+	 * @since 1.0.0
 	 */
 	public function __construct() {}
 }

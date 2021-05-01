@@ -16,6 +16,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * The core plugin class.
+ *
+ * @since 1.0.0
  */
 class Tidy_Head_Tag {
 	/**
@@ -31,7 +33,6 @@ class Tidy_Head_Tag {
 	 * Load the required dependencies for this plugin.
 	 *
 	 * @since    1.0.0
-	 * @access   private
 	 */
 	private function load_dependencies() {
 		/**

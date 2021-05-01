@@ -17,6 +17,8 @@ class Tidy_Head_Tag_Admin {
 
 	/**
 	 * Constructor.
+	 *
+	 * @since 1.0.0
 	 */
 	public function __construct() {
 		add_action( 'admin_menu', array( 'Tidy_Head_Tag_Admin', 'add_options_page' ) );
@@ -24,6 +26,8 @@ class Tidy_Head_Tag_Admin {
 
 	/**
 	 * Add options page.
+	 *
+	 * @since 1.0.0
 	 */
 	public function add_options_page() {
 		add_submenu_page(
@@ -38,6 +42,8 @@ class Tidy_Head_Tag_Admin {
 
 	/**
 	 * Create options page contents.
+	 *
+	 * @since 1.0.0
 	 */
 	public function options_page() {
 
@@ -123,6 +129,8 @@ class Tidy_Head_Tag_Admin {
 
 	/**
 	 * Define options page functions.
+	 *
+	 * @since 1.0.0
 	 */
 	public function update_options() {
 		foreach ( Tidy_Head_Tag_Data::DB_NAME as $db_name_key => $db_name_value ) {

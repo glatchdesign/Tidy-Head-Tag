@@ -12,10 +12,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * Front-end class.
+ *
+ * @since 1.0.0
  */
 class Tidy_Head_Tag_Front {
 	/**
 	 * Constructor.
+	 *
+	 * @since 1.0.0
 	 */
 	public function __construct() {
 		self::update_output_head_tag();
@@ -23,6 +27,8 @@ class Tidy_Head_Tag_Front {
 
 	/**
 	 * Update the output head tag.
+	 *
+	 * @since    1.0.0
 	 */
 	public function update_output_head_tag() {
 		if ( '1' === get_option( 'tht_generator' ) ) {
