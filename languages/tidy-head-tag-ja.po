@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-04-29 13:16+0900\n"
-"PO-Revision-Date: 2021-05-01 13:49+0900\n"
+"POT-Creation-Date: 2021-05-01 15:32+0900\n"
+"PO-Revision-Date: 2021-05-01 15:39+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -19,107 +19,112 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-2: composer.lock\n"
 "X-Poedit-SearchPathExcluded-3: readme.txt\n"
 
-#: includes/class-tidy-head-tag-admin.php:32
+#: includes/class-tidy-head-tag-admin.php:36
 msgid "Tidy Head Tag"
 msgstr ""
 
-#: includes/class-tidy-head-tag-admin.php:47
+#: includes/class-tidy-head-tag-admin.php:53
 msgid "Options saved."
 msgstr "オプションを保存しました。"
 
-#: includes/class-tidy-head-tag-admin.php:52
+#: includes/class-tidy-head-tag-admin.php:58
 msgid "Tidy Head Tag Options"
 msgstr "Tidy Head Tagのオプション"
 
-#: includes/class-tidy-head-tag-admin.php:53
+#: includes/class-tidy-head-tag-admin.php:59
 msgid "Check the tags you want to remove."
 msgstr "削除したいタグにチェックを入れてください。"
 
-#: includes/class-tidy-head-tag-admin.php:58
+#: includes/class-tidy-head-tag-admin.php:64
 msgid "meta generator tag"
 msgstr "generatorタグ"
 
-#: includes/class-tidy-head-tag-admin.php:59
+#: includes/class-tidy-head-tag-admin.php:65
 msgid "Display the version of WordPress you are using."
 msgstr "使用しているWordPressのバージョンを表示します。"
 
-#: includes/class-tidy-head-tag-admin.php:64
+#: includes/class-tidy-head-tag-admin.php:70
 msgid "link EditURI tag"
 msgstr "EditURIタグ"
 
-#: includes/class-tidy-head-tag-admin.php:65
-msgid ""
-"Display the tags you need when posting to WordPress using an external blog "
-"posting tool."
+#: includes/class-tidy-head-tag-admin.php:71
+msgid "Display the link to the Really Simple Discovery (RSD) service endpoint."
 msgstr ""
-"外部のブログ投稿ツールを使用してWordPressに投稿する時に必要なタグを表示しま"
-"す。"
+"Really Simple Discovery（RSD）サービスエンドポイントへのリンクを表示します。"
 
-#: includes/class-tidy-head-tag-admin.php:70
+#: includes/class-tidy-head-tag-admin.php:76
 msgid "link wlwmanifest tag"
 msgstr "wlwmanifestタグ"
 
-#: includes/class-tidy-head-tag-admin.php:71
+#: includes/class-tidy-head-tag-admin.php:77
 msgid ""
-"Display the tags needed when posting to WordPress using Windows Live Writer."
+"Display the tags required when posting to WordPress using Windows Live "
+"Writer."
 msgstr ""
 "Windows LiveWriterを使用してWordPressに投稿する時に必要なタグを表示します。"
 
-#: includes/class-tidy-head-tag-admin.php:76
+#: includes/class-tidy-head-tag-admin.php:82
 msgid "link shortlink tag"
 msgstr "shortlinkタグ"
 
-#: includes/class-tidy-head-tag-admin.php:77
+#: includes/class-tidy-head-tag-admin.php:83
 msgid "Display short link for each WordPress page."
 msgstr "WordPressの各ページの短縮リンクを表示します。"
 
-#: includes/class-tidy-head-tag-admin.php:82
+#: includes/class-tidy-head-tag-admin.php:88
 msgid "Emoji scripts and styles"
 msgstr "絵文字用のスタイルとスクリプト"
 
-#: includes/class-tidy-head-tag-admin.php:83
+#: includes/class-tidy-head-tag-admin.php:89
 msgid "Display CSS and JavaScript required when using emoji."
 msgstr "絵文字を使用する時に必要なCSSとJavaScriptを表示します。"
 
-#: includes/class-tidy-head-tag-admin.php:88
+#: includes/class-tidy-head-tag-admin.php:94
 msgid "link RSS feed tag"
 msgstr "RSSフィードタグ"
 
-#: includes/class-tidy-head-tag-admin.php:89
+#: includes/class-tidy-head-tag-admin.php:95
 msgid "Display the URL of the RSS feed."
 msgstr "RSSフィードのURLを表示します。"
 
-#: includes/class-tidy-head-tag-admin.php:94
+#: includes/class-tidy-head-tag-admin.php:100
 msgid "link comment feed tag"
 msgstr "コメントフィードタグ"
 
-#: includes/class-tidy-head-tag-admin.php:95
+#: includes/class-tidy-head-tag-admin.php:101
 msgid "Display the links to the extra feeds such as category feeds."
 msgstr "カテゴリフィードなどの追加フィードへのリンクを表示します。"
 
-#: includes/class-tidy-head-tag-admin.php:100
+#: includes/class-tidy-head-tag-admin.php:106
 msgid "link REST API tag"
 msgstr "REST APIタグ"
 
-#: includes/class-tidy-head-tag-admin.php:101
+#: includes/class-tidy-head-tag-admin.php:107
 msgid "Display the tags required when using the REST API."
 msgstr "RESTAPIを使用する時に必要なタグを表示します。"
 
-#: includes/class-tidy-head-tag-admin.php:106
+#: includes/class-tidy-head-tag-admin.php:112
 msgid "link oEmbed tag"
 msgstr "oEmbedタグ"
 
-#: includes/class-tidy-head-tag-admin.php:107
+#: includes/class-tidy-head-tag-admin.php:113
 msgid ""
 "Display the tags required when you want to embed external content such as "
-"YouTube and Twitter."
+"YouTube or Twitter."
 msgstr ""
 "YouTubeやTwitterなどの外部コンテンツを埋め込む時に必要なタグを表示します。"
 
-#: includes/class-tidy-head-tag-admin.php:112
+#: includes/class-tidy-head-tag-admin.php:118
 msgid "link rel=prev/next tag"
 msgstr "prev/nextタグ"
 
-#: includes/class-tidy-head-tag-admin.php:113
+#: includes/class-tidy-head-tag-admin.php:119
 msgid "Display the post relational links to Previous and Next."
 msgstr "「前へ」と「次へ」の投稿関係リンクを表示します。"
+
+#~ msgid ""
+#~ "Display the tags you need when posting to WordPress using an external "
+#~ "blog posting tool."
+#~ msgstr ""
+#~ "外部のブログ投稿ツールを使用してWordPressに投稿する時に必要なタグを表示し"
+#~ "ます。"
