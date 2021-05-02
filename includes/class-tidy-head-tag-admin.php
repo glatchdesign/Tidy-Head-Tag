@@ -120,7 +120,7 @@ class Tidy_Head_Tag_Admin {
 						</td>
 					</tr>
 				</table>
-				<p class="submit"><input type="submit" name="Submit" class="button-primary" value="変更を保存" /></p>
+				<p class="submit"><input type="submit" name="Submit" class="button-primary" value="<?php esc_html_e( 'Save Changes', 'tidy-head-tag' ); ?>" /></p>
 				<?php wp_nonce_field( Tidy_Head_Tag_Data::NONCE_ACTION, Tidy_Head_Tag_Data::NONCE_NAME ); ?>
 			</form>
 		</div>
