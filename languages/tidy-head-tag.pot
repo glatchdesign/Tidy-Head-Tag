@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Tidy Head Tag package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Tidy Head Tag 1.2.0\n"
+"Project-Id-Version: Tidy Head Tag 1.2.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tidy-head-tag\n"
 "POT-Creation-Date: 2021-05-02 08:07:30+00:00\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#. #-#-#-#-#  tidy-head-tag.pot (Tidy Head Tag 1.2.0)  #-#-#-#-#
+#. #-#-#-#-#  tidy-head-tag.pot (Tidy Head Tag 1.2.1)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: includes/class-tidy-head-tag-admin.php:36
 msgid "Tidy Head Tag"
