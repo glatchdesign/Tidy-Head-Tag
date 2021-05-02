@@ -26,6 +26,10 @@ You can use the checkboxes to choose which tags to remove.
 1. Setting screen
 
 == Changelog ==
+= 1.2.1 =
+* Added screenshots.
+* Updated translation omissions.
+
 = 1.2.0 =
 * Defined the internationalization functionality.
 * Translated into Japanese.
