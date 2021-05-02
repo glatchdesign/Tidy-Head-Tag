@@ -9,19 +9,21 @@ Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Organize the head tags that WordPress automatically outputs.
+This plugin allows you to organize the contents of the head tag that WordPress automatically outputs.
 
 == Description ==
-Organize the head tags that WordPress automatically outputs.
-Unnecessary meta tags can be deleted from the management screen with just a few clicks.
-Of course, if you need it, follow the same procedure.
+This plugin allows you to organize the contents of the head tag that WordPress automatically outputs.
+You can use the checkboxes to choose which tags to remove.
 
 == Installation ==
 1. From the WP admin panel, click “Plugins” -> “Add new”.
 2. In the browser input box, type “Tidy Head Tag”.
 3. Select the “Tidy Head Tag” plugin and click “Install”.
 4. Activate the plugin.
-5. Visit the "settings" -> "Tidy Head Tag" to configure your options
+5. Visit the "settings" -> "Tidy Head Tag" to configure your options.
+
+== Screenshots ==
+1. Setting screen
 
 == Changelog ==
 = 1.2.0 =
