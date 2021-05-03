@@ -1,0 +1,8 @@
+/.vscode
+/.wordpress-org
+/vendor
+
+/.distignore
+/.gitignore
+/.composer.json
+/.composer.lock
