@@ -3,6 +3,7 @@
 /vendor
 
 /.distignore
+/.github
 /.gitignore
 /.composer.json
 /.composer.lock
