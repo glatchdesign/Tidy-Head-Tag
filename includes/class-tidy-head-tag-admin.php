@@ -11,9 +11,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Menu class.
+ * Admin class.
+ *
+ * @since 1.0.0
  */
 class Tidy_Head_Tag_Admin {
+	/**
+	 * Nonce.
+	 *
+	 * @since 1.0.0
+	 */
+	const NONCE_ACTION = 'tht_nonce_action';
+	const NONCE_NAME   = 'tht_nonce_name';
+
+	/**
+	 * Variables.
+	 *
+	 * @var array $options store plugin options.
+	 * @since 1.3.0
+	 */
+	private $options = array();
 
 	/**
 	 * Constructor.
@@ -21,7 +38,28 @@ class Tidy_Head_Tag_Admin {
 	 * @since 1.0.0
 	 */
 	public function __construct() {
-		add_action( 'admin_menu', array( 'Tidy_Head_Tag_Admin', 'add_options_page' ) );
+		add_action( 'admin_menu', array( $this, 'add_options_page' ) );
+		$this->setup_options();
+	}
+
+	/**
+	 * Setup plugin options.
+	 *
+	 * @since 1.3.0
+	 */
+	public function setup_options() {
+		$this->options = array(
+			'tht_generator',
+			'tht_edituri',
+			'tht_wlwmanifest',
+			'tht_emoji',
+			'tht_shortlink',
+			'tht_feed_links',
+			'tht_restapi',
+			'tht_feed_links_extra',
+			'tht_oembed',
+			'tht_rel_link',
+		);
 	}
 
 	/**
@@ -36,7 +74,7 @@ class Tidy_Head_Tag_Admin {
 			__( 'Tidy Head Tag', 'tidy-head-tag' ),
 			'administrator',
 			'tidy-head-tag',
-			array( 'Tidy_Head_Tag_Admin', 'options_page' )
+			array( $this, 'options_page' )
 		);
 	}
 
@@ -46,9 +84,8 @@ class Tidy_Head_Tag_Admin {
 	 * @since 1.0.0
 	 */
 	public function options_page() {
-
-		if ( ! empty( $_POST && check_admin_referer( Tidy_Head_Tag_Data::NONCE_ACTION, Tidy_Head_Tag_Data::NONCE_NAME ) ) ) {
-			self::update_options();
+		if ( ! empty( $_POST && check_admin_referer( self::NONCE_ACTION, self::NONCE_NAME ) ) ) {
+			$this->update_options();
 			?>
 			<div class="updated fade"><p><strong><?php esc_html_e( 'Options saved.', 'tidy-head-tag' ); ?></strong></p></div>
 			<?php
@@ -121,7 +158,7 @@ class Tidy_Head_Tag_Admin {
 					</tr>
 				</table>
 				<p class="submit"><input type="submit" name="Submit" class="button-primary" value="<?php esc_html_e( 'Save Changes', 'tidy-head-tag' ); ?>" /></p>
-				<?php wp_nonce_field( Tidy_Head_Tag_Data::NONCE_ACTION, Tidy_Head_Tag_Data::NONCE_NAME ); ?>
+				<?php wp_nonce_field( self::NONCE_ACTION, self::NONCE_NAME ); ?>
 			</form>
 		</div>
 		<?php
@@ -133,18 +170,18 @@ class Tidy_Head_Tag_Admin {
 	 * @since 1.0.0
 	 */
 	public function update_options() {
-		foreach ( Tidy_Head_Tag_Data::DB_NAME as $db_name_key => $db_name_value ) {
+		foreach ( $this->options as $option ) {
 			if (
-				isset( $_POST[ $db_name_value ] )
-				&& isset( $_POST[ Tidy_Head_Tag_Data::NONCE_NAME ] )
-				&& wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST[ Tidy_Head_Tag_Data::NONCE_NAME ] ) ), Tidy_Head_Tag_Data::NONCE_ACTION )
+				isset( $_POST[ $option ] )
+				&& isset( $_POST[ self::NONCE_NAME ] )
+				&& wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST[ self::NONCE_NAME ] ) ), self::NONCE_ACTION )
 			) {
 				$value = stripslashes(
-					sanitize_text_field( wp_unslash( $_POST[ $db_name_value ] ) )
+					sanitize_text_field( wp_unslash( $_POST[ $option ] ) )
 				);
-				update_option( $db_name_value, $value );
+				update_option( $option, $value );
 			} else {
-				update_option( $db_name_value, 0 );
+				update_option( $option, 0 );
 			}
 		}
 	}

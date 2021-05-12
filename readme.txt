@@ -5,7 +5,7 @@ Tags: head, wp_head, header, meta
 Requires at least: 5.7.1
 Tested up to: 5.7.1
 Requires PHP: 7.3.5
-Stable tag: 1.2.1
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,6 +26,9 @@ You can use the checkboxes to choose which tags to remove.
 1. Setting screen
 
 == Changelog ==
+= 1.3.0 =
+* Migrate the contents of Tidy_Head_Tag_Data class to Tidy_Head_Tag_Admin class.
+
 = 1.2.1 =
 * Added screenshots.
 * Updated translation omissions.

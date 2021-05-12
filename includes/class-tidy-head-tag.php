@@ -39,7 +39,6 @@ class Tidy_Head_Tag {
 		/**
 		 * Include files.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-tidy-head-tag-data.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-tidy-head-tag-admin.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-tidy-head-tag-front.php';
 
