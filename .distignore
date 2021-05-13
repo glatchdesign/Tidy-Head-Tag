@@ -1,9 +1,9 @@
+/.git
 /.vscode
 /.wordpress-org
-/vendor
-
 /.distignore
 /.github
 /.gitignore
-/.composer.json
-/.composer.lock
+/vendor
+/composer.json
+/composer.lock
